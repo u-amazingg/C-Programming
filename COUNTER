@@ -1,0 +1,11 @@
+//UBAKA AMAZING-GRACE 214918
+#include <stdio.h>
+int main(){
+    printf("This is a program to count 1- N.\nEnter N: \n");
+    int n;
+    scanf("%d", &n);
+    
+    for(int i = 1; i <= n; i++)
+    printf("\n%d", i);
+    
+}
