@@ -1,0 +1,23 @@
+//UBAKA AMAZING-GRACE 214918
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    printf("A program that solves a quadratic equation.\nEnter a:\n");
+    int a, b, c;
+    float x1, x2;
+    scanf("%d", &a);
+    printf("Enter b:\n");
+    scanf("%d", &b);
+    printf("Enter c:\n");
+    scanf("%d", &c);
+    
+    
+    float det = (b * b)-(4*a*c);
+    float sqrtDet = sqrt(det);
+    x1 = ((-b)+sqrtDet)/(2*a);
+    x2 = ((-b)-sqrtDet)/(2*a);
+    
+    printf("\nThe roots of the equation are %f and %f", x1,x2);
+}
