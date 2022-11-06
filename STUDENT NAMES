@@ -1,0 +1,27 @@
+//UBAKA AMAZING-GRACE 214918
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    
+    printf("A program that accepts the names of 10 students. \n");
+    
+    int counter = 0;
+    size_t maxChar = 50;
+    const char* nameArr[10];
+    
+    while(counter<10)
+    {
+        char* input;
+        input = (char*)malloc(maxChar);
+        printf("\n Enter your name. \n");
+        scanf("%s", input);
+        nameArr[counter++] = input;
+    }
+    
+    for(int i = 0; i< 10; i++)
+    printf("%s\n", nameArr[i]);
+    printf("\n");
+
+    return 0;
+}
